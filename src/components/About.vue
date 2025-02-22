@@ -1,17 +1,26 @@
-<!-- src/components/Home.vue -->
 <template>
-    <div>
-      <!-- Seu conteúdo HTML aqui -->
-       <h1>Sobre</h1>
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'Home',
-  };
-  </script>
-  
-  <style scoped>
-  /* Seu CSS aqui */
-  </style>
+  <div>
+    <Header />
+    <main>
+      <!-- Conteúdo da página -->
+    </main>
+    <Footer />
+  </div>
+</template>
+
+<script>
+import Header from './atomos/Header.vue';
+import Footer from './atomos/Footer.vue';
+
+export default {
+  name: 'About',
+  components: {
+    Header,
+    Footer,
+  },
+};
+</script>
+
+<style>
+/* Estilos globais ou específicos da página */
+</style>
