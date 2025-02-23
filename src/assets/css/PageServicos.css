@@ -1,0 +1,260 @@
+/* Services Page Styles */
+:root {
+    --page-bg: #ffffff;
+    --text-primary: #1A1D1F;
+    --text-secondary: #666666;
+    --primary-color: #0052FF;
+    --secondary-color: #E5E7EB;
+    --accent-color1: #2c6add;
+    --success-color: #10B981;
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --section-padding: 5rem;
+}
+
+/* Dark Mode Colors */
+[data-theme="dark"] {
+    --page-bg: #1A1D1F;
+    --text-primary: #ffffff;
+    --text-secondary: #9CA3AF;
+    --secondary-color: #374151;
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background-color: var(--page-bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.services-header {
+    padding: 1.5rem 5%;
+    background: var(--page-bg);
+    border-bottom: 1px solid var(--secondary-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Hero Section */
+.hero-sectionn {
+    display: flex;
+    align-items: center;
+    padding: var(--section-padding) 5%;
+    gap: 4rem;
+}
+
+.hero-contentn {
+    flex: 1;
+}
+
+.hero-contentn h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.hero-contentn p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+
+
+/* Benefits Section */
+.benefits-section {
+    padding: var(--section-padding) 5%;
+    background: var(--secondary-color);
+
+}
+.benefits-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.benefit-card {
+    text-align: center;
+    padding: 2rem;
+}
+
+.benefit-card img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: var(--section-padding) 5%;
+    background: var(--secondary-color);
+}
+.testimonials-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: var(--page-bg);
+    padding: 2rem;
+    border-radius: 16px;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.client-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: var(--section-padding) 5%;
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.cta-button1 {
+    padding: 1rem 2rem;
+    background: var(--accent-color1);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cta-button1:hover {
+    background: var(--accent-hover-color);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-sectionn {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services-grid,
+    .benefits-grid,
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-contentn h1 {
+        font-size: 2.5rem;
+    }
+
+    .services-grid,
+    .benefits-grid,
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 0 1rem;
+    }
+}

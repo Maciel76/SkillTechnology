@@ -1,60 +1,62 @@
 <!-- src/components/ServicesSection.vue -->
 <template>
-    <section class="services">
-      <div class="services-header">
-        <h2>🚀 O Que Oferecemos Para <br>Você e Sua <span class="highlight">Empresa</span></h2>
-        <button class="cta-button">Ver Mais</button>
+  <section class="services">
+    <div class="services-header">
+      <h2>✨ Soluções <span class="highlight"> IA </span> que Simplifica <br> Otimiza e Faz Sua <span class="highlight"> Empresa Crescer</span></h2>
+      <router-link to="/servicos"><button class="cta-button">Ver Mais</button></router-link>
+    </div>
+    <div class="service-cards">
+      <!-- Serviço 1: Websites Inteligentes -->
+      <div class="service-card active">
+        <img src="/src/assets/img//svg/website.svg" alt="Website" class="service-icon">
+        <h3>Websites Inteligentes</h3>
+        <p>Criação de sites dinâmicos com IA para personalizar a experiência do usuário.</p>
+        <router-link to="/website" class="learn-more" id="seemore">Ver mais →</router-link>
       </div>
-      <div class="service-cards">
-        <!-- Serviço 1: Website -->
-        <div class="service-card active">
-          <img src="/src/assets/img//svg/website.svg" alt="Website" class="service-icon">
-          <h3>Website</h3>
-          <p>Product that has a good appearance can attract users</p>
-          <router-link to="/website" class="learn-more" id="seemore" >Ver mais →</router-link>
-        </div>
   
-        <!-- Serviço 2: Aplicativos -->
-        <div class="service-card">
-          <img src="/src/assets/img/svg/app.svg" alt="Aplicativos" class="service-icon">
-          <h3>Aplicativos</h3>
-          <p>Brand identity is needed to make business trustworthy</p>
-          <router-link to="/apps" class="learn-more" id="seemore">Ver mais →</router-link>
-        </div>
-  
-        <!-- Serviço 3: UX/UI Design -->
-        <div class="service-card">
-          <img src="/src/assets/img/svg/ux.svg" alt="UX/UI Design" class="service-icon">
-          <h3>UX/UI Design</h3>
-          <p>3D design is something new and has a high value</p>
-          <router-link to="/ux-ui" class="learn-more" id="seemore">Ver mais →</router-link>
-        </div>
-  
-        <!-- Serviço 4: Illustration -->
-        <div class="service-card">
-          <img src="/src/assets/img/svg/illustration.svg" alt="Illustration" class="service-icon">
-          <h3>Illustration</h3>
-          <p>Make your story more eye-catching with a touch of illustration</p>
-          <router-link to="/illustration" class="learn-more" id="seemore">Ver mais →</router-link>
-        </div>
-  
-        <!-- Serviço 5: E-commerce -->
-        <div class="service-card">
-          <img src="/src/assets/img/svg/commece.svg" alt="E-commerce" class="service-icon">
-          <h3>E-commerce</h3>
-          <p>This new digital painting is still attractive with young people</p>
-          <router-link to="/ecommerce" class="learn-more" id="seemore">Ver mais →</router-link>
-        </div>
-  
-        <!-- Serviço 6: Consultoria e Suporte -->
-        <div class="service-card">
-          <img src="/src/assets/img/svg/suporte.svg" alt="Consultoria e Suporte" class="service-icon">
-          <h3>Consultoria e Suporte</h3>
-          <p>It is undeniable that businesses must still have print designs</p>
-          <router-link to="/consultoria" class="learn-more" id="seemore">Ver mais →</router-link>
-        </div>
+      <!-- Serviço 2: Aplicativos com IA -->
+      <div class="service-card">
+        <img src="/src/assets/img/svg/app.svg" alt="Aplicativos" class="service-icon">
+        <h3>Aplicativos Inteligente</h3>
+        <p>Desenvolvimento de apps que aprendem e evoluem com o uso.</p>
+        <router-link to="/apps" class="learn-more" id="seemore">Ver mais →</router-link>
       </div>
-    </section>
+  
+      <!-- Serviço 3: UX/UI Inteligente -->
+      <div class="service-card">
+        <img src="/src/assets/img/svg/ux.svg" alt="UX/UI Design" class="service-icon">
+        <h3>UX/UI Inteligente</h3>
+        <p>Interfaces que se adaptam ao comportamento do usuário com IA.</p>
+        <router-link to="/ux-ui" class="learn-more" id="seemore">Ver mais →</router-link>
+      </div>
+  
+      <!-- Serviço 3: Geração de Imagem e Vídeo com IA -->
+        <div class="service-card">
+        <img src="/src/assets/img/svg/imagem.svg" alt="Geração de Imagem e Vídeo" class="service-icon">
+        <h3>Imagem e Vídeo com IA</h3>
+        <p>Criamos conteúdos visuais impactantes e vídeos dinâmicos que tona seu negocio único com tecnologia de IA.</p>
+        <router-link to="/media-ai" class="learn-more" id="seemore">Ver mais →</router-link>
+      </div>
+  
+      <!-- Serviço 5: E-commerce Automatizado -->
+      <div class="service-card">
+        <img src="/src/assets/img/svg/commece.svg" alt="E-commerce" class="service-icon">
+        <h3>E-commerce Automatizado</h3>
+        <p>Plataformas que recomendam produtos e otimizam vendas com IA.</p>
+        <router-link to="/ecommerce" class="learn-more" id="seemore">Ver mais →</router-link>
+      </div>
+  
+      <!-- Serviço 6: Consultoria com IA -->
+      <div class="service-card">
+        <img src="/src/assets/img/svg/suporte.svg" alt="Consultoria e Suporte" class="service-icon">
+        <h3>Consultoria com IA</h3>
+        <p>Análise de dados e insights estratégicos para impulsionar seu negócio.</p>
+        <router-link to="/consultoria" class="learn-more" id="seemore">Ver mais →</router-link>
+      </div>
+    </div>
+  </section>
+  
+  
   </template>
   
   <script>
