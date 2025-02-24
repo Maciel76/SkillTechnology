@@ -20,16 +20,16 @@
           <div class="footer-column">
             <h3>Nosso site</h3>
             <ul>
-              <li><router-link to="#">Nossa missão</router-link></li>
-              <li><router-link to="#">Sobre</router-link></li>
-              <li><router-link to="#">Eventos</router-link></li>
+              <li><router-link to="/missao">Nossa missão</router-link></li>
+              <li><router-link to="/sobre">Sobre</router-link></li>
+              <li><router-link to="/evento">Eventos</router-link></li>
             </ul>
           </div>
           <div class="footer-column">
             <h3>Informação útil</h3>
             <ul>
-              <li><router-link to="#">Política de Privacidade</router-link></li>
-              <li><router-link to="#">Termos de Uso</router-link></li>
+              <li><router-link to="/politicaPrivacidade">Política de Privacidade</router-link></li>
+              <li><router-link to="/termosUso">Termos de Uso</router-link></li>
             </ul>
           </div>
           <div class="footer-column">

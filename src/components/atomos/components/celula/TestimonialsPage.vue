@@ -2,7 +2,7 @@
     <main>
       <!-- Conteúdo da página -->
       <section class="testimonials-section">
-        <h2>O Que Nossos Clientes Dizem</h2>
+        <h2>Depoimentos Nosso clientes</h2>
         <div class="testimonials-grid">
             <div class="testimonial-card">
                 <div class="client-info">

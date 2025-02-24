@@ -3,17 +3,19 @@
     <div>
         <Header /> <!-- Usando o componente Header --> 
         <main>
-            <HeroSection /> <!-- Usando o componente HeroSection -->
+            <HeroSection /> <!-- Usando o componente HeroSection -->           
     
             <StatsSection /> <!-- Usando o componente StatsSection -->
 
-            <ServingSection /> <!-- Usando o componente ServingSection -->
+            <ProgectDetalhe /> <!-- Usando o componente ProgectDetalhe -->            
             
             <ServicesSection /> <!-- Usando o componente ServicesSection -->
     
             <PortfolioSection /> <!-- Usando o componente PortfolioSection -->
     
             <TestimonialsSection /> <!-- Usando o componente AvaliacoesSection -->
+
+            <ServingSection /> <!-- Usando o componente ServingSection -->
     
             <ContactSection /> <!-- Usando o componente ContactSection -->
         </main>
@@ -32,6 +34,7 @@ import PortfolioSection from './atomos/PortfolioSection.vue'; // Importando o co
 import TestimonialsSection from './atomos/TestimonialsSection.vue'; // Importando o componente A
 import ContactSection from './atomos/ContactSection.vue'; // Importando o componente ContactSection
 import Footer from './atomos/Footer.vue'; // Importando o componente Footer
+import ProgectDetalhe from './atomos/components/celula/ProgectDetalhe.vue'; // Importando o componente Footer
 
 export default {
   name: 'Home',
@@ -45,6 +48,7 @@ export default {
     TestimonialsSection, // Registrando pagina de avaliação
     ContactSection, // Registrando o componente ContactSection
     Footer, // Registrando o componente Footer
+    ProgectDetalhe,
   },
 };
 </script>
