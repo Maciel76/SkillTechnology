@@ -11,7 +11,7 @@
         <img src="/src/assets/img//svg/website.svg" alt="Website" class="service-icon">
         <h3>Websites Inteligentes</h3>
         <p>Criação de sites dinâmicos com IA para personalizar a experiência do usuário.</p>
-        <router-link to="/servicoPageweb" class="learn-more" id="seemore">Ver mais →</router-link>
+        <router-link to="/pageWebsite" class="learn-more" id="seemore">Ver mais →</router-link>
       </div>
   
       <!-- Serviço 2: Aplicativos com IA -->
@@ -19,7 +19,7 @@
         <img src="/src/assets/img/svg/app.svg" alt="Aplicativos" class="service-icon">
         <h3>Aplicativos Inteligente</h3>
         <p>Desenvolvimento de apps que aprendem e evoluem com o uso.</p>
-        <router-link to="#" class="learn-more" id="seemore">Ver mais →</router-link>
+        <router-link to="/pageAplicativos" class="learn-more" id="seemore">Ver mais →</router-link>
       </div>
   
       <!-- Serviço 3: UX/UI Inteligente -->
@@ -27,7 +27,7 @@
         <img src="/src/assets/img/svg/ux.svg" alt="UX/UI Design" class="service-icon">
         <h3>UX/UI Inteligente</h3>
         <p>Interfaces que se adaptam ao comportamento do usuário com IA.</p>
-        <router-link to="#" class="learn-more" id="seemore">Ver mais →</router-link>
+        <router-link to="/pageInterface" class="learn-more" id="seemore">Ver mais →</router-link>
       </div>
   
       <!-- Serviço 3: Geração de Imagem e Vídeo com IA -->
@@ -35,7 +35,7 @@
         <img src="/src/assets/img/svg/imagem.svg" alt="Geração de Imagem e Vídeo" class="service-icon">
         <h3>Imagem e Vídeo com IA</h3>
         <p>Criamos conteúdos visuais impactantes e vídeos dinâmicos que tona seu negocio único com tecnologia de IA.</p>
-        <router-link to="#" class="learn-more" id="seemore">Ver mais →</router-link>
+        <router-link to="/pageMidia" class="learn-more" id="seemore">Ver mais →</router-link>
       </div>
   
       <!-- Serviço 5: E-commerce Automatizado -->
@@ -43,7 +43,7 @@
         <img src="/src/assets/img/svg/commece.svg" alt="E-commerce" class="service-icon">
         <h3>E-commerce Automatizado</h3>
         <p>Plataformas que recomendam produtos e otimizam vendas com IA.</p>
-        <router-link to="#" class="learn-more" id="seemore">Ver mais →</router-link>
+        <router-link to="/pageEcommerce" class="learn-more" id="seemore">Ver mais →</router-link>
       </div>
   
       <!-- Serviço 6: Consultoria com IA -->
@@ -51,7 +51,7 @@
         <img src="/src/assets/img/svg/suporte.svg" alt="Consultoria e Suporte" class="service-icon">
         <h3>Consultoria com IA</h3>
         <p>Análise de dados e insights estratégicos para impulsionar seu negócio.</p>
-        <router-link to="#" class="learn-more" id="seemore">Ver mais →</router-link>
+        <router-link to="/pageConsultoria" class="learn-more" id="seemore">Ver mais →</router-link>
       </div>
     </div>
   </section>

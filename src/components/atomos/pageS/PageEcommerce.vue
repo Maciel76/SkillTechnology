@@ -3,8 +3,8 @@
       <Header />
       <main>
         <section class="service-hero">
-            <h1>Desenvolvimento de <span class="highlight">Websites</span></h1>
-            <p>Criamos websites profissionais, responsivos e otimizados para converter visitantes em clientes.</p>
+            <h1>Desenvolvimento de <span class="highlight">E-commerce Automatizado</span></h1>
+            <p>Plataformas que recomendam produtos e otimizam vendas com IA.</p>
             <button class="cta-button">Solicitar Orçamento</button>
         </section>
 
@@ -55,44 +55,31 @@
             </div>
         </section>
 
-        <section class="portfolio-section">
-            <h2>Portfólio</h2>
-            <div class="portfolio-grid">
-                <!-- Add portfolio items -->
-            </div>
-        </section>
+        <PortfolioEcommerce />
 
+        <!-- Perguntas Frequentes -->
         <section class="faq-section">
             <h2>Perguntas Frequentes</h2>
             <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Quanto tempo leva para desenvolver um website?</h3>
-                        <img src="https://api.iconify.design/heroicons:chevron-down.svg" alt="Expandir">
-                    </div>
-                    <div class="faq-answer">
-                        <p>O tempo de desenvolvimento varia de acordo com a complexidade do projeto, mas geralmente leva entre 4 a 8 semanas.</p>
-                    </div>
+              <div
+                v-for="(faq, index) in faqs"
+                :key="index"
+                class="faq-item"
+                :class="{ active: faq.isOpen }"
+              >
+                <div class="faq-question" @click="toggleFAQ(index)">
+                  <h3>{{ faq.question }}</h3>
+                  <img
+                    :src="`https://api.iconify.design/heroicons:chevron-${faq.isOpen ? 'up' : 'down'}.svg`"
+                    alt="Expandir"
+                  />
                 </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Quanto custa para desenvolver um website?</h3>
-                        <img src="https://api.iconify.design/heroicons:chevron-down.svg" alt="Expandir">
-                    </div>
-                    <div class="faq-answer">
-                        <h4>Quanto custa para desenvolver um website?</h4>
-                        <p>O valor do desenvolvimento de um website depende do tipo de projeto. Trabalhamos com três categorias principais:
-
-                            Básico (Site Institucional) – A partir de R$1.500
-                            Intermediário (Site com Blog, Integrações e SEO) – A partir de R$3.500
-                            Avançado (E-commerce, Sistemas Personalizados) – A partir de R$7.000
-                            Cada projeto é único, e podemos personalizar um orçamento conforme suas necessidades</p>
-                    </div>
+                <div class="faq-answer" v-if="faq.isOpen">
+                  <p v-html="faq.answer"></p>
                 </div>
-                
-                <!-- Add more FAQ items -->
+              </div>
             </div>
-        </section>
+          </section>
 
         <section class="service-contact">
             <h2>Vamos criar seu website?</h2>
@@ -106,14 +93,46 @@
   </template>
   
   <script>
-  import Header from './Header.vue';
-  import Footer from './Footer.vue';
+  import Header from '../Header.vue';
+  import Footer from '../Footer.vue';
+  import PortfolioEcommerce from './PortfolioEcommece.vue';
   
   export default {
-    name: 'SevicePageweb',
+    name: 'PageEcommerce',
     components: {
       Header,
       Footer,
+      PortfolioEcommerce,
+    },
+    data() {
+      return {
+        faqs: [
+          {
+            question: 'Quanto tempo leva para desenvolver um website?',
+            answer: 'O tempo de desenvolvimento varia de acordo com a complexidade do projeto, mas geralmente leva entre 4 a 8 semanas.',
+            isOpen: false,
+          },
+          {
+            question: 'Quanto custa para desenvolver um website?',
+            answer: `
+              O valor do desenvolvimento de um website depende do tipo de projeto. Trabalhamos com três categorias principais:
+              <ul>
+                <li>Básico (Site Institucional) – A partir de R$1.500</li>
+                <li>Intermediário (Site com Blog, Integrações e SEO) – A partir de R$3.500</li>
+                <li>Avançado (E-commerce, Sistemas Personalizados) – A partir de R$7.000</li>
+              </ul>
+              Cada projeto é único, e podemos personalizar um orçamento conforme suas necessidades.
+            `,
+            isOpen: false,
+          },
+          // Adicione mais perguntas aqui
+        ],
+      };
+    },
+    methods: {
+      toggleFAQ(index) {
+        this.faqs[index].isOpen = !this.faqs[index].isOpen;
+      },
     },
   };
   </script>

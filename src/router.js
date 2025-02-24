@@ -11,9 +11,13 @@ import SobreView from './components/SobreView.vue'; // Importe o componente Sobr
 import EventoView from './components/EventoView.vue'; // Importe o componente EventoView
 import PoliticaView from './components/PoliticaView.vue'; // Importe o componente PoliticaView
 import TermosView from './components/TermosView.vue'; // Importe o componente TermosView
-import SevicePageweb from './components/atomos/SevicePageweb.vue'; // Importe o componente SevicePageweb
-
-
+import PageWesite from './components/atomos/pageS/PageWebsite.vue'; // Importe o componente PageSevices serviços
+import PageAplicativos from './components/atomos/pageS/PageAplicativos.vue'; // Importe o componente PageAplicativos serviços
+import PageInterface from './components/atomos/pageS/PageInterface.vue'; // Importe o componente PageInterface serviços
+import PageMidia from './components/atomos/pageS/PageMidia.vue'; // Importe o componente PageMidia serviços
+import PageEcommerce from './components/atomos/pageS/PageEcommerce.vue'; // Importe o componente PageEcommerce serviços
+import PageConsultoria from './components/atomos/pageS/PageConsultoria.vue';  // Importe o componente Consultoria serviços
+ 
 
 const routes = [
   { path: '/', component: Home },
@@ -27,7 +31,12 @@ const routes = [
   { path: '/evento', component: EventoView }, // Rota para Evento
   { path: '/politicaPrivacidade', component: PoliticaView }, // Rota para Política de Privacidade
   { path: '/termosUso', component: TermosView }, // Rota para Termos de Uso
-  { path: '/servicoPageweb', component: SevicePageweb }, // Rota para Serviço de Página Web
+  { path: '/pageWebsite', component: PageWesite }, // Rota para Serviço de Website
+  { path: '/pageAplicativos', component: PageAplicativos }, // Rota para Serviço de Aplicativos
+  { path: '/pageInterface', component: PageInterface }, // Rota para Serviço de Interface
+  { path: '/pageMidia', component: PageMidia }, // Rota para Serviço de Mídia
+  { path: '/pageEcommerce', component: PageEcommerce }, // Rota para Serviço de E-commerce
+  { path: '/pageConsultoria', component: PageConsultoria }, // Rota para Serviço de Consultoria
   
 
 ];
