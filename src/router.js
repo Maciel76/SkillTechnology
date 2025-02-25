@@ -17,6 +17,7 @@ import PageInterface from './components/atomos/pageS/PageInterface.vue'; // Impo
 import PageMidia from './components/atomos/pageS/PageMidia.vue'; // Importe o componente PageMidia serviços
 import PageEcommerce from './components/atomos/pageS/PageEcommerce.vue'; // Importe o componente PageEcommerce serviços
 import PageConsultoria from './components/atomos/pageS/PageConsultoria.vue';  // Importe o componente Consultoria serviços
+import EcommerceView from './components/EcommerceView.vue'; // Importe o componente EcommerceView
  
 
 const routes = [
@@ -37,9 +38,17 @@ const routes = [
   { path: '/pageMidia', component: PageMidia }, // Rota para Serviço de Mídia
   { path: '/pageEcommerce', component: PageEcommerce }, // Rota para Serviço de E-commerce
   { path: '/pageConsultoria', component: PageConsultoria }, // Rota para Serviço de Consultoria
-  
+  { path: '/ecommerce', component: EcommerceView }, // Rota para E-commerce
 
-];
+  // Rota para o componente ProdutoPage
+    {
+      path: '/produtos/:id',
+      name: 'ProdutoPage',
+      component: () => import('./components/ProdutoPage.vue'),
+      props: true, // Passar o ID como prop
+    },
+  ];
+
 
 const router = createRouter({
   history: createWebHistory(),

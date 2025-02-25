@@ -13,7 +13,9 @@ import './assets/css/servicos.css'
 import './assets/css/servicos1.css'
 import './assets/css/stilo.css'
 import './assets/css/style.css'
+import './assets/css/ecommerce.css'
 
 const app = createApp(App);
 app.use(router);
 app.mount('#app');
+

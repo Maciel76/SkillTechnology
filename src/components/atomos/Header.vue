@@ -11,7 +11,7 @@
         <li><router-link to="#">Portfolio</router-link></li>
         <li><router-link to="/planos">Planos e preços</router-link></li>
         <li><router-link to="/feedback">Clientes</router-link></li>
-        <li><router-link to="#">Loja</router-link></li>
+        <li><router-link to="/ecommerce">Loja</router-link></li>
       </ul>
       <button class="cta-button">
         <span ref="typing"></span>

@@ -11,7 +11,7 @@
             
             <ServicesSection /> <!-- Usando o componente ServicesSection -->
     
-            <PortfolioSection /> <!-- Usando o componente PortfolioSection -->
+             <PrincipaisProjetos /> <!-- Usando o componente PrincipaisProjetos -->
     
             <TestimonialsSection /> <!-- Usando o componente AvaliacoesSection -->
 
@@ -35,6 +35,7 @@ import TestimonialsSection from './atomos/TestimonialsSection.vue'; // Importand
 import ContactSection from './atomos/ContactSection.vue'; // Importando o componente ContactSection
 import Footer from './atomos/Footer.vue'; // Importando o componente Footer
 import ProgectDetalhe from './atomos/components/celula/ProgectDetalhe.vue'; // Importando o componente Footer
+import PrincipaisProjetos from './atomos/PrincipaisProjetos.vue';
 
 export default {
   name: 'Home',
@@ -49,6 +50,7 @@ export default {
     ContactSection, // Registrando o componente ContactSection
     Footer, // Registrando o componente Footer
     ProgectDetalhe,
+    PrincipaisProjetos,
   },
 };
 </script>

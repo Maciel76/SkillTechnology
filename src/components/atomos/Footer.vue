@@ -7,14 +7,8 @@
             <img src="/src/assets/img/svg/logo.svg" alt="Logo" class="logo-icon">
             <span>Skill Technology Work</span>
           </div>
-          <p>Desenvolvemos Seu Site Com Criatividade e Inovação <br> <br>Siga Nosso Trabalho</p>
-          <div class="social-links">
-            <a href="#"><img src="/src/assets/img/svg/facbook.svg" alt="Facebook"></a>
-            <a href="#"><img src="/src/assets/img/svg/instagram.svg" alt="Instagram"></a>
-            <a href="#"><img src="/src/assets/img/svg/youtube.svg" alt="YouTube"></a>
-            <a href="#"><img src="/src/assets/img/svg/linkdin.svg" alt="LinkedIn"></a>
-            <a href="#"><img src="/src/assets/img/svg/whatsapp.svg" alt="Whatsapp"></a>
-          </div>
+          <p>Soluções IA que Simplificam e Aceleram Resultados</p>
+           <SigaNos /> <!-- Usando o componente SigaNos importando as redes sociais -->
         </div>
         <div class="footer-links">
           <div class="footer-column">
@@ -48,8 +42,12 @@
   </template>
   
   <script>
+  import SigaNos from './SigaNos.vue';
   export default {
     name: 'Footer',
+    components: {
+    SigaNos,    
+  },
   };
   </script>
   
