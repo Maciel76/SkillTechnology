@@ -18,8 +18,11 @@ import PageMidia from './components/atomos/pageS/PageMidia.vue'; // Importe o co
 import PageEcommerce from './components/atomos/pageS/PageEcommerce.vue'; // Importe o componente PageEcommerce serviços
 import PageConsultoria from './components/atomos/pageS/PageConsultoria.vue';  // Importe o componente Consultoria serviços
 import EcommerceView from './components/EcommerceView.vue'; // Importe o componente EcommerceView
+import PortifolioView from './components/PortifolioView.vue';
+import BlogView from './components/BlogView.vue';
+import BlogpostView from './components/BlogpostView.vue';
+import ArticleEditor from './components/ArticleEditor.vue';
  
-
 const routes = [
   { path: '/', component: Home },
   { path: '/about', component: About },
@@ -39,16 +42,24 @@ const routes = [
   { path: '/pageEcommerce', component: PageEcommerce }, // Rota para Serviço de E-commerce
   { path: '/pageConsultoria', component: PageConsultoria }, // Rota para Serviço de Consultoria
   { path: '/ecommerce', component: EcommerceView }, // Rota para E-commerce
+  { path: '/portifolio', component: PortifolioView }, // Rota para Portifólio
+  { path: '/blog', component: BlogView }, // Rota para Blog
+  { path: '/blog/:id', component: BlogpostView, props: true }, // Rota para Post do Blog
 
-  // Rota para o componente ProdutoPage
-    {
-      path: '/produtos/:id',
-      name: 'ProdutoPage',
-      component: () => import('./components/ProdutoPage.vue'),
-      props: true, // Passar o ID como prop
-    },
-  ];
 
+  {path: '/editor/:postId?',
+    component: ArticleEditor,
+    props: true
+  }, // Rota para o editor de artigos
+
+
+  {
+    path: '/produtos/:id',
+    name: 'ProdutoPage',
+    component: () => import('./components/ProdutoPage.vue'),
+    props: true
+  }, // Rota para a página de produtos
+];
 
 const router = createRouter({
   history: createWebHistory(),

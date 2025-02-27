@@ -9,17 +9,6 @@
     --service-accent: #FFD60A;
     --service-card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
-
-/* Dark Mode Colors */
-[data-theme="dark"] {
-    --service-bg: #1A1D1F;
-    --service-text: #ffffff;
-    --service-gray: #9CA3AF;
-    --service-light-gray: #2D3748;
-    --service-secondary: #4A5568;
-    --service-card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-}
-
 /* General Page Styles */
 .service-page {
     background-color: var(--service-bg);

@@ -139,18 +139,18 @@ position: absolute;
 top: 50%;
 transform: translateY(-50%);
 background: rgba(0, 0, 0, 0.5);
-color: white;
+color: rgb(255, 255, 255);
 border: none;
 padding: 1rem;
 cursor: pointer;
-border-radius: 50%;
+border-radius: 30%;
 font-size: 1.2rem;
 z-index: 2;
 transition: background-color 0.3s;
 }
 
 .nav-button:hover {
-background: rgba(0, 0, 0, 0.7);
+background: rgba(25, 129, 189, 0.541);
 }
 
 .prev {
@@ -199,7 +199,7 @@ background: white;
 }
 
 .nav-button {
-  padding: 0.8rem;
+  padding: 0.2rem;
   font-size: 1rem;
 }
 }

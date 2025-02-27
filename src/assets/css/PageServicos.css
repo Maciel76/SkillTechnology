@@ -221,9 +221,7 @@ body {
     transition: background 0.3s ease;
 }
 
-.cta-button1:hover {
-    background: var(--accent-hover-color);
-}
+
 
 /* Responsive Design */
 @media (max-width: 1024px) {

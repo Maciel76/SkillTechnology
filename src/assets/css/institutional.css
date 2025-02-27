@@ -1,0 +1,173 @@
+/* Institutional Pages Shared Styles */
+.institutional-hero {
+  background: linear-gradient(135deg, #2064bd, #1a4f96);
+  color: white;
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.institutional-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/src/assets/img/pattern.svg') repeat;
+  opacity: 0.1;
+}
+
+.institutional-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.institutional-hero .highlight {
+  color: #4CAF50;
+}
+
+.institutional-hero p {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.institutional-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.content-section {
+  margin-bottom: 4rem;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  color: #2064bd;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Cards Styling */
+.mission-cards, .team-grid, .events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.mission-card, .team-member, .event-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.mission-card:hover, .team-member:hover, .event-card:hover {
+  transform: translateY(-5px);
+}
+
+.mission-card img, .team-member img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+}
+
+.mission-card h3, .team-member h3 {
+  color: #2064bd;
+  margin-bottom: 1rem;
+}
+
+/* Timeline Styling */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 4rem auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #2064bd;
+  transform: translateX(-50%);
+}
+
+/* Legal Content Styling */
+.legal-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.legal-content section {
+  margin-bottom: 3rem;
+}
+
+.legal-content h2 {
+  color: #2064bd;
+  margin-bottom: 1.5rem;
+}
+
+.legal-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.legal-content ul li {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.legal-content ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #4CAF50;
+}
+
+/* Animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .institutional-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .institutional-hero p {
+    font-size: 1.1rem;
+  }
+
+  .content-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .mission-cards, .team-grid, .events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline::before {
+    left: 2rem;
+  }
+}
