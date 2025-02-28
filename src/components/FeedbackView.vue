@@ -2,7 +2,7 @@
   <div>
     <Header />
 
-    <!-- Hero Section -->
+    <!-- Hero Section. -->
     <section class="hero-section">
       <div class="container">
         <h1 class="main-title">O que nossos clientes dizem</h1>

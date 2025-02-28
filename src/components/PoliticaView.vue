@@ -160,7 +160,60 @@ export default {
 </script>
 
 <style scoped>
-@import '../assets/css/institutional.css';
+/* Institutional Pages Shared Styles */
+.institutional-hero {
+  background: linear-gradient(135deg, #2064bd, #1a4f96);
+  color: white;
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.institutional-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/src/assets/img/pattern.svg') repeat;
+  opacity: 0.1;
+}
+
+.institutional-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.institutional-hero .highlight {
+  color: #4CAF50;
+}
+
+.institutional-hero p {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.institutional-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.content-section {
+  margin-bottom: 4rem;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  color: #2064bd;
+  margin-bottom: 2rem;
+  text-align: center;
+}
 
 .privacy-summary {
   background: rgba(255, 255, 255, 0.1);

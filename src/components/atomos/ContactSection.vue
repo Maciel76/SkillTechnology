@@ -85,13 +85,52 @@ export default {
 </script>
 
 <style scoped>
+/* Contact Section */
+.contact {
+  padding: 5rem 5%;
+}
+
+.contact-card {
+  background: var(--dark-bg);
+  color: white;
+  padding: 4rem;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.contact-card h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.contact-card p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input {
+  flex: 1;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.contact-form input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
 p{
   text-transform: capitalize;
 }
-
-
-
-
 .contact-form input,
 .contact-form textarea {
   width: 100%;

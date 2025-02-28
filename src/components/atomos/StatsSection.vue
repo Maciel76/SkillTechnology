@@ -67,6 +67,33 @@
   </script>
   
   <style scoped>
-  /* Estilos específicos para a seção de estatísticas */
+  /* Stats Section */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 2rem 5%;
+  background-color: #1A1D1F;
+  border-radius: 24px;
+  margin: 0 5%;
+  margin-bottom: 5rem;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 3rem;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+.stat-card h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  color: var(--gray-color);
+}
   
   </style>

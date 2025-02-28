@@ -2,11 +2,13 @@
   <div>
     <Header />
     <main>
+      <!-- Hero Section -->
       <section class="institutional-hero">
         <h1>Sobre <span class="highlight">Nós</span></h1>
         <p>Conheça nossa história, nossa equipe e o que nos torna únicos no mercado de tecnologia.</p>
       </section>
 
+      <!-- Main Content -->
       <div class="institutional-content">
         <!-- Company Introduction -->
         <section class="content-section animate-on-scroll">
@@ -106,6 +108,7 @@
 
         <!-- Statistics Section -->
         <section class="content-section animate-on-scroll stats-section">
+          <h2>Nossos Números</h2>
           <div class="stats-grid">
             <div class="stat-item">
               <div class="stat-number">500+</div>
@@ -161,59 +164,182 @@ export default {
 </script>
 
 <style scoped>
-@import '../assets/css/institutional.css';
+/* Variáveis de cores */
+:root {
+  --inst-bg: #ffffff;
+  --inst-text: #1A1D1F;
+  --inst-gray: #666666;
+  --inst-light-gray: #f8f9fa;
+  --inst-primary: #0052FF;
+  --inst-secondary: #E5E7EB;
+  --inst-accent: #FFD60A;
+  --inst-card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
 
+[data-theme="dark"] {
+  --inst-bg: #1A1D1F;
+  --inst-text: #ffffff;
+  --inst-gray: #9CA3AF;
+  --inst-light-gray: #2D3748;
+  --inst-secondary: #4A5568;
+  --inst-card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero Section */
+.institutional-hero {
+  text-align: center;
+  padding: 6rem 5%;
+  background: var(--inst-light-gray);
+}
+
+.institutional-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.institutional-hero .highlight {
+  color: var(--inst-primary);
+}
+
+.institutional-hero p {
+  color: var(--inst-gray);
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Main Content */
+.institutional-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 5%;
+}
+
+.content-section {
+  margin-bottom: 6rem;
+}
+
+.content-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--inst-text);
+}
+
+/* Company Introduction */
 .company-intro {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  display: flex;
   align-items: center;
-  margin-bottom: 4rem;
+  gap: 3rem;
+}
+
+.intro-text {
+  flex: 1;
 }
 
 .intro-text h2 {
-  text-align: left;
+  font-size: 2.2rem;
   margin-bottom: 1.5rem;
+}
+
+.intro-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--inst-gray);
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  padding: 12px 24px;
+  background: var(--inst-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #0041cc;
 }
 
 .intro-image img {
   width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: var(--inst-card-shadow);
 }
 
+/* Timeline Section */
 .timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   position: relative;
-  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--inst-secondary);
+  transform: translateX(-50%);
 }
 
 .timeline-item {
-  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
   position: relative;
-  padding-left: 3rem;
 }
 
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 16px;
-  height: 16px;
-  background: #2064bd;
-  border-radius: 50%;
+.timeline-item:nth-child(odd) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.timeline-content {
+  background: var(--inst-light-gray);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--inst-card-shadow);
+  flex: 1;
 }
 
 .timeline-content h3 {
-  color: #2064bd;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  color: var(--inst-primary);
 }
 
 .timeline-content h4 {
-  color: #333;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  color: var(--inst-text);
+}
+
+.timeline-content p {
+  font-size: 1rem;
+  color: var(--inst-gray);
+}
+
+/* Team Section */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.team-member {
+  text-align: center;
+  background: var(--inst-light-gray);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--inst-card-shadow);
 }
 
 .member-image img {
@@ -224,8 +350,15 @@ export default {
   margin-bottom: 1rem;
 }
 
+.team-member h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--inst-text);
+}
+
 .member-role {
-  color: #666;
+  font-size: 1rem;
+  color: var(--inst-gray);
   margin-bottom: 1rem;
 }
 
@@ -241,42 +374,55 @@ export default {
   transition: transform 0.3s ease;
 }
 
-.social-links a:hover img {
-  transform: translateY(-3px);
+.social-links img:hover {
+  transform: scale(1.1);
 }
 
-.stats-section {
-  background: #f8f9fa;
-  padding: 4rem 0;
-  border-radius: 10px;
-}
-
+/* Statistics Section */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
+}
+
+.stat-item {
   text-align: center;
+  background: var(--inst-light-gray);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--inst-card-shadow);
 }
 
 .stat-number {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #2064bd;
+  color: var(--inst-primary);
   margin-bottom: 0.5rem;
 }
 
 .stat-label {
-  color: #666;
+  font-size: 1rem;
+  color: var(--inst-gray);
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   .company-intro {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    flex-direction: column;
   }
 
-  .intro-image img {
-    height: 300px;
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .timeline-item:nth-child(odd) {
+    flex-direction: column;
+    text-align: left;
   }
 }
 </style>

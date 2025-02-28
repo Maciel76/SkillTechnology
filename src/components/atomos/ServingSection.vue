@@ -35,6 +35,60 @@
   </script>
   
   <style scoped>
-  /* Estilos específicos para a seção de atendimento */
+  /* Serving Section */
+.serving {
+  padding: 5rem 5%;
+}
+
+.serving-content h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+.office-images {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+}
+
+.office-card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.office-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.office-label {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.office-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.office-label span {
+  font-weight: 600;
+}
+
+.office-label p {
+  color: var(--gray-color);
+  font-size: 0.9rem;
+}
   
   </style>

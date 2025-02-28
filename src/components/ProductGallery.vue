@@ -20,7 +20,7 @@
     },
     data() {
       return {
-        images: [], // Lista de imagens do produto
+        images: [], // Lista de imagens do produto.
       };
     },
     methods: {

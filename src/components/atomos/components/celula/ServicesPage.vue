@@ -109,4 +109,37 @@ export default {
     font-weight: 500;
     transition: color 0.3s;
 }
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-sectionn {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services-grid,
+    .benefits-grid,
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-contentn h1 {
+        font-size: 2.5rem;
+    }
+
+    .services-grid,
+    .benefits-grid,
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 0 1rem;
+    }
+}
 </style>

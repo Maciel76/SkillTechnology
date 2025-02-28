@@ -19,7 +19,7 @@
     </header>
 
     <main class="blog-main">
-      <!-- Featured Post Section -->
+      <!-- Featured Post Section. -->
       <section v-if="featuredPosts.length" class="featured-post">
         <router-link :to="`/blog/${featuredPosts[0].id}`" class="featured-post-link">
           <img :src="featuredPosts[0].image" :alt="featuredPosts[0].title" class="featured-image" />

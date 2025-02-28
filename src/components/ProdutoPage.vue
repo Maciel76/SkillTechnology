@@ -1,7 +1,7 @@
 <template>
   <Header />
   <div class="product-details" v-if="produto">
-    <!-- Breadcrumb (Navegação) -->
+    <!-- Breadcrumb (Navegação.) -->
     <nav class="breadcrumb">
       <router-link to="/">Home</router-link> /
       <router-link to="/produtos">Produtos</router-link> /

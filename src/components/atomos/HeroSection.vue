@@ -1,4 +1,4 @@
-<!-- src/components/HeroSection.vue -->
+<!-- src/components/HeroSection.vue. -->
 <template>
   <section class="hero">
     <div class="hero-content">

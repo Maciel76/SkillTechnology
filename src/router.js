@@ -21,7 +21,7 @@ import EcommerceView from './components/EcommerceView.vue'; // Importe o compone
 import PortifolioView from './components/PortifolioView.vue';
 import BlogView from './components/BlogView.vue';
 import BlogpostView from './components/BlogpostView.vue';
-import ArticleEditor from './components/ArticleEditor.vue';
+
  
 const routes = [
   { path: '/', component: Home },
@@ -45,12 +45,9 @@ const routes = [
   { path: '/portifolio', component: PortifolioView }, // Rota para Portifólio
   { path: '/blog', component: BlogView }, // Rota para Blog
   { path: '/blog/:id', component: BlogpostView, props: true }, // Rota para Post do Blog
+  
 
 
-  {path: '/editor/:postId?',
-    component: ArticleEditor,
-    props: true
-  }, // Rota para o editor de artigos
 
 
   {

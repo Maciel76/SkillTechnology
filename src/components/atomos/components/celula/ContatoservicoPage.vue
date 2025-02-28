@@ -1,6 +1,6 @@
 <template>
     <main>
-      <!-- Conteúdo da página -->
+      <!-- Conteúdo da página  -->
       <section class="contact-section">
         <div class="contact-content">
             <h2>Transforme seu Negócio com  IA</h2>
@@ -43,4 +43,67 @@ export default {
 
 <style>
 /* Estilos globais ou específicos da página */
+/* Contact Section */
+.contact-section {
+    padding: var(--section-padding) 5%;
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
 </style>

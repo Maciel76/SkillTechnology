@@ -19,7 +19,7 @@
 
         <img :src="post.image" :alt="post.title" class="post-image" />
         
-        <!-- Componente dinâmico carregado com base no ID do post -->
+        <!-- Componente dinâmico carregado com base no ID do post. -->
         <component :is="postComponent" v-if="postComponent" />
         
         <!-- Restante do código... -->

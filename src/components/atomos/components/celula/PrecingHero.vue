@@ -12,8 +12,13 @@ export default {
 </script>
 
 <style>
-
-/* Estilos globais ou específicos da página */
+:root {
+  
+  --pricing-gray: #666666;
+  --pricing-light-gray: #f8f9fa; 
+  --pricing-primary: #1a50b6;
+  --pricing-secondary: #E5E7EB;
+}
 /* Pricing Hero */
 .pricing-hero {
   text-align: center;
@@ -30,4 +35,12 @@ export default {
   color: var(--pricing-gray);
   font-size: 1.2rem;
 }
+.pricing-hero .highlight {
+  color: var(--pricing-primary)
+}
+.highlight {
+  color: var(--pricing-primary);
+}
+
+
 </style>

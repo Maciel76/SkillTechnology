@@ -2,7 +2,7 @@
   <div>
     <Header />
     <main>
-      <!-- Conteúdo da página -->
+      <!-- Conteúdo da página  revisado-->
        <HeroPage />
        <ServicesPage />
        <BeneficioPage />

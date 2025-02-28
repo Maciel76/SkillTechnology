@@ -1,4 +1,4 @@
-<!-- src/components/Home.vue -->
+<!-- src/components/Home.vue. -->
 <template>
     <div>
         <Header /> <!-- Usando o componente Header --> 
@@ -16,6 +16,7 @@
             <TestimonialsSection /> <!-- Usando o componente AvaliacoesSection -->
 
             <ServingSection /> <!-- Usando o componente ServingSection -->
+            
     
             <ContactSection /> <!-- Usando o componente ContactSection -->
         </main>
@@ -33,6 +34,7 @@ import ServicesSection from './atomos/ServicesSection.vue'; // Importando o comp
 import PortfolioSection from './atomos/PortfolioSection.vue'; // Importando o componente PortfolioSection
 import TestimonialsSection from './atomos/TestimonialsSection.vue'; // Importando o componente A
 import ContactSection from './atomos/ContactSection.vue'; // Importando o componente ContactSection
+import BenefitsSection from './BenefitsSection.vue'; // Importando o componente BenefitsSection
 import Footer from './atomos/Footer.vue'; // Importando o componente Footer
 import ProgectDetalhe from './atomos/components/celula/ProgectDetalhe.vue'; // Importando o componente Footer
 import PrincipaisProjetos from './atomos/PrincipaisProjetos.vue';
@@ -51,6 +53,7 @@ export default {
     Footer, // Registrando o componente Footer
     ProgectDetalhe,
     PrincipaisProjetos,
+    BenefitsSection,
   },
 };
 </script>

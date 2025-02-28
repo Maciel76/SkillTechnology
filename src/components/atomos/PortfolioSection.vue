@@ -55,5 +55,62 @@
   </script>
   
   <style scoped>
-  
+  /* Projects Section */
+.projects {
+  padding: 5rem 5%;
+}
+
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.projects-header h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.project-card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.project-label {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.project-label h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-label p {
+  color: var(--gray-color);
+  font-size: 0.9rem;
+}
   </style>

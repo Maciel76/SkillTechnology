@@ -1,7 +1,7 @@
 <template>    
     <main>
         <section class="projects-grid">
-            <!-- Project Card 1 -->
+            <!-- Project Card 1; -->
             <article class="project-card">
                 <div class="project-thumbnail">
                     <img 

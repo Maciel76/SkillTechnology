@@ -12,6 +12,7 @@
       <ul class="nav-links" :class="{ 'active': isMenuOpen }">
         <li><router-link to="/blog" @click="closeMenu">Blog</router-link></li>
         <li><router-link to="/portifolio" @click="closeMenu">Portfolio</router-link></li>
+        <li><router-link to="/servicos" @click="closeMenu">Serviços</router-link></li>
         <li><router-link to="/planos" @click="closeMenu">Planos e preços</router-link></li>
         <li><router-link to="/feedback" @click="closeMenu">Clientes</router-link></li>
         <li><router-link to="/ecommerce" @click="closeMenu">Loja</router-link></li>
@@ -78,6 +79,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+}
+nav a{
+  text-decoration: none;
+  list-style: none;
+  color: var(--pricing-text);
 }
 
 .logo {

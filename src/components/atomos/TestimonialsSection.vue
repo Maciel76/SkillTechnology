@@ -52,6 +52,66 @@
   </script>
   
   <style scoped>
-  /* Estilos específicos para a seção de testemunhos */
+  /* Testimonials Section */
+.testimonials {
+  padding: 5rem 5%;
+}
+
+.testimonials h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card.active {
+  background: var(--altenative-color);
+  color: white;
+}
+
+.testimonial-card.active p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.client-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.client-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.client-info p {
+  color: var(--gray-color);
+  font-size: 0.9rem;
+}
+
+.testimonial-text {
+  color: var(--gray-color);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
 
   </style>

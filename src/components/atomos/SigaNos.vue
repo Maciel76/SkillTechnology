@@ -22,5 +22,20 @@
     justify-content: center;
     gap: 20px;
   }
+  .social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.social-links img:hover {
+    opacity: 1;
+}
 
   </style>
