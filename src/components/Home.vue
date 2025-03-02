@@ -6,10 +6,11 @@
             <HeroSection /> <!-- Usando o componente HeroSection -->           
     
             <StatsSection /> <!-- Usando o componente StatsSection -->
+            
 
             <ProgectDetalhe /> <!-- Usando o componente ProgectDetalhe -->            
             
-            <ServicesSection /> <!-- Usando o componente ServicesSection -->
+            <ServicesHome /> <!-- Usando o componente PortifolioHome -->
     
              <PrincipaisProjetos /> <!-- Usando o componente PrincipaisProjetos -->
     
@@ -38,6 +39,7 @@ import BenefitsSection from './BenefitsSection.vue'; // Importando o componente 
 import Footer from './atomos/Footer.vue'; // Importando o componente Footer
 import ProgectDetalhe from './atomos/components/celula/ProgectDetalhe.vue'; // Importando o componente Footer
 import PrincipaisProjetos from './atomos/PrincipaisProjetos.vue';
+import ServicesHome from './atomos/ServicesHome.vue';
 
 export default {
   name: 'Home',
@@ -54,6 +56,7 @@ export default {
     ProgectDetalhe,
     PrincipaisProjetos,
     BenefitsSection,
+    ServicesHome,
   },
 };
 </script>

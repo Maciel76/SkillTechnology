@@ -137,7 +137,7 @@
   };
   </script>
   
-  <style scoped>
+  <style scoped=true&lang.css>
   /* Services Pages Styles */
   :root {
     --service-bg: #ffffff;

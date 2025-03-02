@@ -143,7 +143,6 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('/src/assets/img/pattern.svg') repeat;
   opacity: 0.1;
 }
 

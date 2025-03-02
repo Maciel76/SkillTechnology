@@ -12,6 +12,14 @@
         </div>
         <div class="footer-links">
           <div class="footer-column">
+            <h3>Navegação do site</h3>
+            <ul>
+              <li><router-link to="/missao">Nossa missão</router-link></li>
+              <li><router-link to="/sobre">Sobre</router-link></li>
+              <li><router-link to="/evento">Eventos</router-link></li>
+            </ul>
+          </div>
+          <div class="footer-column">
             <h3>Nosso site</h3>
             <ul>
               <li><router-link to="/missao">Nossa missão</router-link></li>

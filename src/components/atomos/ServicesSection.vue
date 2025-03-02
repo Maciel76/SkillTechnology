@@ -6,7 +6,7 @@
       <router-link to="#"><button class="cta-button">Ver Mais</button></router-link>
     </div>
     <div class="service-cards">
-      <!-- Serviço 1: Websites Inteligentes -->
+      <!-- Serviço 1: Websites Inteligentes  -->
       <div class="service-card active">
         <img src="/src/assets/img//svg/website.svg" alt="Website" class="service-icon">
         <h3>Websites Inteligentes</h3>

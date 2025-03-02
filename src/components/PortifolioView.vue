@@ -200,10 +200,19 @@
           shortDescription: 'App mobile para entregas',
           description: 'Aplicativo mobile para gestão e rastreamento de entregas em tempo real com interface intuitiva.',
           image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVjbm9sb2dpYXxlbnwwfHwwfHx8MA%3D%3D',
+          tags: ['Mobile', 'UI/UX'], //adiciona a categoria 
+          technologies: ['React Native', 'Firebase'],
+          link: '#'
+        },{
+          id: 2,
+          title: 'Aplicativo de Agendamentos',
+          shortDescription: 'App mobile para entregas',
+          description: 'Aplicativo mobile para gestão e rastreamento de entregas em tempo real com interface intuitiva.',
+          image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVjbm9sb2dpYXxlbnwwfHwwfHx8MA%3D%3D',
           tags: ['Mobile', 'UI/UX'],
           technologies: ['React Native', 'Firebase'],
           link: '#'
-        }
+        },
       ]);
   
       const services = ref([
@@ -229,7 +238,28 @@
           ]
         },
         {
-          id: 2,
+          id: 1,
+          title: 'Desenvolvimento Web',
+          shortDescription: 'Websites e aplicações web modernas',
+          description: 'Criamos websites e aplicações web responsivas, rápidas e otimizadas para SEO.',
+          icon: 'https://api.iconify.design/heroicons:computer-desktop.svg',
+          benefits: [
+            'Design responsivo para todos os dispositivos',
+            'Otimização para mecanismos de busca',
+            'Alta performance e velocidade de carregamento',
+            'Integrado com Ai e Machine Learning'
+          ],
+          cases: [
+            {
+              id: 1,
+              title: 'E-commerce Fashion',
+              description: 'Aumento de 150% nas vendas online',
+              image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbXB1dGFkb3J8ZW58MHx8MHx8fDA%3D'
+            }
+          ]
+        },
+        {
+          id: 3,
           title: 'Desenvolvimento Mobile',
           shortDescription: 'Aplicativos iOS e Android',
           description: 'Desenvolvemos aplicativos nativos e híbridos para iOS e Android.',
@@ -241,13 +271,14 @@
           ],
           cases: [
             {
-              id: 1,
+              id: 3,
               title: 'App de Delivery',
               description: 'Mais de 10.000 downloads na primeira semana',
               image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbXB1dGFkb3J8ZW58MHx8MHx8fDA%3D'
             }
           ]
-        }
+        },
+        
       ]);
   
       const testimonials = ref([
