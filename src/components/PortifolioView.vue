@@ -181,7 +181,7 @@
       const selectedProject = ref(null);
       const selectedService = ref(null);
   
-      const categories = ['Todos', 'WebSite', 'Mobile', 'E-commerce', 'UI/UX'];
+      const categories = ['Todos', 'WebSite', ' ', 'E-commerce', 'UI/UX'];
   
       const projects = ref([
         {
