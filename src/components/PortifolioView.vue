@@ -5,7 +5,7 @@
       <!-- Hero Section. -->
       <section class="hero-section">
         <div class="container">
-          <h1 class="main-title">Nosso <span class="highlight">Portfólio</span></h1>
+          <h1 class="main-title">Nossos <span class="highlight">Projetos</span></h1>
           <p class="subtitle">Conheça alguns dos nossos projetos e cases de sucesso</p>
         </div>
       </section>
@@ -181,7 +181,7 @@
       const selectedProject = ref(null);
       const selectedService = ref(null);
   
-      const categories = ['Todos', 'Web', 'Mobile', 'E-commerce', 'UI/UX'];
+      const categories = ['Todos', 'WebSite', 'Mobile', 'E-commerce', 'UI/UX'];
   
       const projects = ref([
         {
@@ -190,7 +190,7 @@
           shortDescription: 'Plataforma de vendas online completa',
           description: 'Desenvolvimento de uma plataforma completa de e-commerce com integração de pagamentos, gestão de estoque e análise de dados em tempo real.',
           image: 'https://images.unsplash.com/photo-1522252234503-e356532cafd5?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-          tags: ['E-commerce', 'Web'],
+          tags: ['E-commerce', 'WebSite'],
           technologies: ['Vue.js', 'Node.js', 'MongoDB'],
           link: '#'
         },
@@ -238,8 +238,8 @@
           ]
         },
         {
-          id: 1,
-          title: 'Desenvolvimento Web',
+          id: 2,
+          title: 'Lojas Virtuais & E-commerce',
           shortDescription: 'Websites e aplicações web modernas',
           description: 'Criamos websites e aplicações web responsivas, rápidas e otimizadas para SEO.',
           icon: 'https://api.iconify.design/heroicons:computer-desktop.svg',
@@ -251,7 +251,7 @@
           ],
           cases: [
             {
-              id: 1,
+              id: 2,
               title: 'E-commerce Fashion',
               description: 'Aumento de 150% nas vendas online',
               image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbXB1dGFkb3J8ZW58MHx8MHx8fDA%3D'
@@ -392,6 +392,7 @@
 .subtitle {
   font-size: 1.25rem;
   opacity: 0.9;
+  text-transform: capitalize;
 }
 
 /* Filter Section */

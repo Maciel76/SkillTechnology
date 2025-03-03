@@ -140,14 +140,14 @@ export default {
 <style scoped=true&lang.css>
 /* Services Pages Styles */
 :root {
-  --service-bg: #ffffff;
-  --service-text: #1A1D1F;
-  --service-gray: #666666;
-  --service-light-gray: #f8f9fa;
-  --service-primary: #0052FF;
-  --service-secondary: #E5E7EB;
-  --service-accent: #FFD60A;
-  --service-card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --service-bg: var(--bg-color);
+  --service-text: var(--text-color);
+  --service-gray: var(--text-color-light);
+  --service-light-gray: var(--bg-color-light);
+  --service-primary: var(--primary-color);
+  --service-secondary: var(--secondary-color);
+  --service-accent: var(--accent-color);
+  --service-card-shadow: var(--card-shadow);
 }
 
 /* General Page Styles */
@@ -164,15 +164,25 @@ export default {
 
 /* Service Hero */
 .service-hero {
-  padding: 4rem 5%;
+  padding: 6rem 5% 4rem;
   text-align: center;
-  background: var(--service-light-gray);
-  background-image: url('https://source.unsplash.com/1600x900/?technology');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  color: var(--service-text);
+  background: linear-gradient(135deg, var(--service-primary) 0%, var(--service-accent) 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
   animation: slideIn 1.2s ease;
+}
+
+.service-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/src/assets/img/pattern.png');
+  opacity: 0.1;
+  animation: float 20s linear infinite;
 }
 
 @keyframes slideIn {
@@ -209,12 +219,13 @@ export default {
 }
 
 .feature-card {
-  background: var(--service-light-gray);
-  padding: 2rem;
-  border-radius: 16px;
+  background: var(--service-bg);
+  padding: 2.5rem;
+  border-radius: 20px;
   text-align: center;
+  border: 1px solid var(--service-secondary);
   box-shadow: var(--service-card-shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   animation: fadeIn 1.5s ease;
 }
 
@@ -242,8 +253,8 @@ export default {
 
 /* Process Section */
 .process-section {
-  padding: 4rem 5%;
-  background: var(--service-light-gray);
+  padding: 6rem 5%;
+  background: linear-gradient(to bottom, var(--service-bg), var(--service-light-gray));
   animation: fadeIn 1.5s ease;
   text-align: center;
 }
@@ -346,11 +357,18 @@ export default {
 
 /* Contact Section */
 .service-contact {
-  padding: 4rem 5%;
+  padding: 6rem 5%;
   text-align: center;
-  background: var(--service-primary);
+  background: linear-gradient(135deg, var(--service-primary) 0%, var(--service-accent) 100%);
   color: white;
+  position: relative;
+  overflow: hidden;
   animation: fadeIn 1.5s ease;
+}
+
+@keyframes float {
+  from { transform: translateY(0) rotate(0deg); }
+  to { transform: translateY(-100%) rotate(10deg); }
 }
 
 .service-contact h2 {

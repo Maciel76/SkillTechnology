@@ -21,6 +21,7 @@ import EcommerceView from './components/EcommerceView.vue'; // Importe o compone
 import PortifolioView from './components/PortifolioView.vue';
 import BlogView from './components/BlogView.vue';
 import BlogpostView from './components/BlogpostView.vue';
+import Contribui from './components/atomos/pageS/PageDoacoes.vue'
 
  
 const routes = [
@@ -45,6 +46,7 @@ const routes = [
   { path: '/portifolio', component: PortifolioView }, // Rota para Portifólio
   { path: '/blog', component: BlogView }, // Rota para Blog
   { path: '/blog/:id', component: BlogpostView, props: true }, // Rota para Post do Blog
+  { path: '/Contribui', component: Contribui }, // Rota para Missão
   
 
 
